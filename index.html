@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+ <div id="contenedor">
+    <div id="juego">
+        <div id="jugar">
+            <p id="intrest">Intentos restantes: 6</p>
+            <input id="intento" type="text" maxlength="5" placeholder="Palabra de 5 letras">
+            <button id="intentar">Intentar</button>
+            <p id="error">*Debe tener 5 letras! 😾</p>
+        </div>
+        <div id="intentos">
+
+        </div>
+    </div>
+    <div id="juegofin"><button id="reintentar">Reintentar</button>
+        <div id="mensaje"><h1>Ganaste</h1>
+        <h1 id="ganador">Palabra Ganadora</h1>
+           
+    </div>
+ </div>   
+
+</body>
+</html>
