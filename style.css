@@ -30,7 +30,7 @@ button{width: 120px;height: 30px;border: none;font-size: 20px;margin-bottom: 10p
 
 /*Fin del juego*/
 #juegofin{border: #000030;display: none;}
-#reintentar{height: 50px;border-radius: 10px;}
+#reintentar{height: 50px;border-radius: 10px;animation: aparecer 0.1s linear;}
 
 @keyframes aparecer {
     0%{scale: 0.25;}
@@ -39,3 +39,4 @@ button{width: 120px;height: 30px;border: none;font-size: 20px;margin-bottom: 10p
     100%{scale: 1;}
     
 }
+#mensaje{animation: aparecer 0.1s linear;}

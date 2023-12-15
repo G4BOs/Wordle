@@ -8,7 +8,7 @@ const ERROR  = document.getElementById('error');
 const FIN = document.getElementById('juegofin');
 const INTREST =document.getElementById('intrest');
 const GANADOR = document.getElementById('ganador');
-
+let pganadora = document.getElementById('pganadora');
 const endpoint="https://random-word-api.herokuapp.com/word?lang=es&&length=5"
 fetch(endpoint).then((response)=>{
     response.json().then((data)=>{
@@ -37,7 +37,7 @@ function juego() {
         
 
 if (intentos==0){
-        terminar("<h1>PERDISTE!😿</h1>")
+        terminar("<h1>PERDISTE 😿</h1>");pganadora.innerText="La palabra era: "+palabra;
    return }
    const ROW = document.createElement('div');
     ROW.className = 'row';
@@ -59,15 +59,15 @@ for (let i in palabra){
         SPAN.className = 'letter';
 
     if(INTENTO[i]===palabra[i]){SPAN.innerHTML = INTENTO[i];
-        SPAN.style.backgroundColor = 'green';}
+        SPAN.style.backgroundColor = '#a0fb0e';}
     else if(palabra.includes(INTENTO[i])){
         SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = 'yellow';}
+            SPAN.style.backgroundColor = '#edef00';}
         else {SPAN.innerHTML = INTENTO[i];
-            SPAN.style.backgroundColor = 'grey';}
+            SPAN.style.backgroundColor = '#626262';}
             ROW.appendChild(SPAN)}
             if (INTENTO === palabra ) {
-                terminar("<h1>GANASTE!😺</h1>")
+                terminar("<h1>GANASTE! 😺</h1>")
                 }
 COLUMNAS.appendChild(ROW)
 if(intentos<=0){console.log("PERDISTE")}
