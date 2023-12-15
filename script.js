@@ -59,7 +59,7 @@ for (let i in palabra){
         SPAN.className = 'letter';
 
     if(INTENTO[i]===palabra[i]){SPAN.innerHTML = INTENTO[i];
-        SPAN.style.backgroundColor = '#a0fb0e';}
+        SPAN.style.backgroundColor = '#00e676';}
     else if(palabra.includes(INTENTO[i])){
         SPAN.innerHTML = INTENTO[i];
             SPAN.style.backgroundColor = '#edef00';}
